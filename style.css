@@ -1,0 +1,254 @@
+/* ROBOTO FONT */
+
+:root {
+    --primary-color: rgba(13, 110, 139.0.75);
+    --overlay-color: rgba(24, 39, 51.0.85);
+    --menu-speed: 0.15s;
+    --side-menu-width: 312px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;1,500&display=swap');
+@font-face {
+    font-family: 'Gotham';
+    src: url("/fonts/Gotham.ttf") format("truetype");
+}
+
+body, section {
+    font-family: Gotham;
+    box-sizing: border-box;
+    text-align: center;
+    border: 0;
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    height: 50px;
+    background-color: #000;
+    background-color: transparent;
+    white-space: nowrap;
+}
+
+header .logo {
+    justify-self: start;
+    margin-left: 10px;
+}
+
+header .logo>img {
+    width: 100px;
+    background-color: transparent;
+    /* color:#0899bd;*/
+    /* filter: invert(36%) sepia(89%) saturate(6992%) hue-rotate(1deg) brightness(103%) contrast(107%); */
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+}
+
+.nav-item {
+    margin-right: 25px;
+}
+
+.nav-center {
+    display: flex;
+    /* width: 100%; */
+    margin-left: auto;
+    /* visibility:hidden; */
+}
+
+.nav-item-right {
+    margin-left: auto;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+footer {
+    width: 100%;
+    height: 50px;
+    /* margin-top: -50px; */
+    position: fixed;
+    bottom: 0px;
+    background-color: transparent;
+}
+
+.footer-nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item-footer {
+    margin-right: 20px;
+}
+
+.nav-item-footer a {
+    color: #fff;
+}
+
+.section img {
+    display: block;
+    width: 100%;
+}
+
+.section-bg {
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* width: 100%; */
+    /* background-color: #; */
+    background: #3b3939;
+}
+
+.btn {
+    position: relative;
+    top: 250px;
+    display: block;
+    margin: auto;
+    width: 250px;
+    height: 100px;
+    border-radius: 15px;
+    background-color: #db36a4;
+}
+
+.btn.is-active {
+    width: 200px;
+    background-color: #3f102f;
+}
+
+.btn-grad {
+    background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA 51%, #77A1D3 100%)
+}
+
+.btn-grad {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.btn-grad {
+    background-image: linear-gradient(to right, #f7ff00 0%, #db36a4 51%, #f7ff00 100%)
+}
+
+.btn-grad {
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.btn-grad:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+.side-nav {
+    position: absolute;
+    top: 0;
+    left: calc(100% - var(--side-menu-width));
+    width: var(--side-menu-width);
+    height: 100vh;
+    background-color: #fff;
+    display: none;
+    /* left: 15px; */
+}
+
+.side-nav-center {
+    position: absolute;
+    top: 45px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.side-nav-center>ul {
+    padding-left: 15px;
+    list-style-type: none;
+}
+
+.side-nav-center>ul>li {
+    padding: 20px 10px;
+    /* z-index: 500; */
+    border-bottom: 1px solid #d4d1d1;
+}
+
+.show {
+    display: inherit;
+}
+
+.video-bg {
+    position: relative;
+    z-index: -1000;
+}
+
+.video-bg video {
+    width: 100%;
+}
+
+.content {
+    position: absolute;
+    bottom: 150px;
+    color: #fff;
+}
+
+.content h1 {
+    text-align: center;
+}
+
+/* .smart-scroll {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+} */
+
+.scrolled-down {
+    transform: translateY(-100%);
+    transition: all 0.3s ease-in-out;
+}
+
+.scrolled-up {
+    transform: translateY(0);
+    transition: all 0.3s ease-in-out;
+}
+
+.pdf {
+    /* position: absolute; */
+    width: 90%;
+    height: 90%;
+}
